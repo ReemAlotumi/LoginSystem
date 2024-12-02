@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4 rounded-4" style="max-width: 400px; width: 100%;">
+      <h3 class="text-center  fw-bold mb-3">Smart Login System</h3>
+      <form id="registerForm">
+        <!-- Name -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control rounded-pill" id="registerName" placeholder="Name" required>
+          <label for="registerName"><i class="fas fa-user me-2"></i>Name</label>
+          <small id="registerNameError" class="text-danger"></small>
+        </div>
+        <!-- Email -->
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control rounded-pill" id="registerEmail" placeholder="Email" required>
+          <label for="registerEmail"><i class="fas fa-envelope me-2"></i>Email</label>
+          <small id="registerEmailError" class="text-danger"></small>
+        </div>
+        <!-- Password -->
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control rounded-pill" id="registerPassword" placeholder="Password" required>
+          <label for="registerPassword"><i class="fas fa-lock me-2"></i>Password</label>
+          <small id="registerPasswordError" class="text-danger"></small>
+        </div>
+        <button type="submit" class="btn btn-outline-info w-100 mt-4 rounded-pill">Sign Up</button>
+      </form>
+      <p class="text-center mt-3">Already have an account? <a href="index.html" class=" btn-outline-info fw-bold">Sign In</a></p>
+    </div>
+  </div>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
